@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
 
                 
 *{
@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+.body{
+    width: 822px;
+    height: 1080px;
+}
 .logo{
     padding: 20px;
     margin-left: 20px;
@@ -16,6 +20,7 @@
 .line{
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
     border: 1px solid #1a1a1a;
 }
 
@@ -43,9 +48,112 @@
     font-size: 20px;
     border-style: none;
     cursor: pointer;
-    font-family: 'helvetica-neue-9';
+    font-family: 'Helvetica Neue';
 }
 
 .add a{
     color: white;
+}
+/* აქედან ფორმი */
+
+.whole-page{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(243, 244, 245);
+}
+
+.left-page{
+    width: 55%;
+    padding: 30px 60px;
+    
+}
+.right-page{
+    width: 45%;
+    background-color: white;
+}
+.head, .full-name{
+    display: flex;
+    justify-content: space-between;
+}
+.firstname, .lastname, .about, .mail, .number{
+    display: flex;
+    flex-direction: column;
+    
+}
+.whole-page label{
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    line-height: 21px;
+}
+.whole-page p{
+    font-size: 14px;
+    color: #5e5c5c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Helvetica Neue';
+}
+
+div .next{
+    display: flex;
+    justify-content: flex-end;
+}
+.next input{
+    background-color: #6B40E3;
+    color: white;
+    padding: 18px 60px;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+input{
+    height: 48px;
+   
+}
+.back{
+    margin-left: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.vector{
+    position: absolute;
+    margin-left: 15px;
+    margin-top: 13px;
+}
+.ellipse{
+    position: absolute;
+
+}
+.right-page .small-logo{
+    padding: 20px 40px;
+    margin-top: 100%;
+}
+.names{
+    width: 300px;
+}
+.about textarea{
+    border-style: none;
+    resize: none;
+    height: 80px;
+}
+
+.file-upload{
+    background-color: #0E80BF;
+    padding: 10px 10px 12px;
+    color: white;
+    margin-left: 40px;
+    width: 107px;
+    height: 27px;
+    border-style: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.upload{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

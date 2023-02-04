@@ -9,8 +9,67 @@
         <header>
         </header>
         <main>
-            
+            <div class="whole-page">
+                <div class="back">
+                    <a href=""><img class="ellipse" src="../რედბერი/imgs/Ellipse 1.png"></a>
+                    <a href=""><img class="vector" src="../რედბერი/imgs/Vector.png"></a>
+                </div>
+                <div class="left-page">
+                   
+                     <div class="head">
+                        <h1>პირადი ინფო</h1>
+                        <p>1/3</p>
+                     </div>
+                        <hr class=line style="width: 100%">
+                        <div class="full-name">
+                            <div class="firstname">
+                                <label>სახელი</label>
+                                <input class="names" type="text" placeholder="&#x20 &#x20 ანზორ">
+                                <p>მინიმუმ 2 ასო, ქართული ასოები</p>
+                            </div>
+                            <div class="lastname">
+                                <label>გვარი</label>
+                                <input class="names" type="text" placeholder="&#x20 &#x20 მუმლაძე" >
+                                <p>მინიმუმ 2 ასო, ქართული ასოებით</p>
+                            </div>
+                        </div>
+                        <div class="upload">
+                            <label>პირადი ფოტოს ატვირთვა</label>
+                            
+                            <input type="file" id="file" hidden/>
+                            <button class="file-upload" onclick="thisFileUpload();">ატვირთვა</button>
+                        </div>
+                        <div class="about">
+                            <label>ჩემ შესახებ (არასავალდებულო) </label>
+                            <textarea placeholder="&#x20 &#x20ზოგადი ინფო შენ შესახებ"></textarea>
+                        </div>
+                        <div class="mail">
+                            <label>ელ. ფოსტა</label>
+                            <input type="text" placeholder="&#x20 &#x20 anzorr666@redberry.ge">
+                            <p>უნდა მთავრდებოდეს @redberry.ge-ით</p>
+                        </div>
+                        <div class="number">
+                            <label>მობილური ნომერი</label>
+                            <input type="text" placeholder="&#x20 &#x20 +995 551 12 34 56">
+                            <p>უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმას</p>
+                        </div>
+                        <!-- <button type="submit" class="next">შემდეგი</button> -->
+                        <div class="next"> 
+                            <a href=""><input type="submit" value="შემდეგი"></a>
+                        </div>
+                        
+                </div>
+
+                <div class="right-page">
+                    <div class="small-logo">
+                        <img src="../რედბერი/imgs/LOGO-12 1.png">
+                    </div>
+                    
+                </div>
+            </div>
+           
         </main>
         <footer></footer>
+        <script src="../რედბერი/upload.js"></script>
     </body>
 </html>
