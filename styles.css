@@ -1,0 +1,51 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+                
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.logo{
+    padding: 20px;
+    margin-left: 20px;
+}
+.line{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #1a1a1a;
+}
+
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    position: absolute;                               
+}
+.logo2{
+    margin-top: 150px;
+    margin-left: 400px;
+}
+
+.button .add{
+    padding: 18px 60px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    border-style: none;
+    cursor: pointer;
+    font-family: 'helvetica-neue-9';
+}
+
+.add a{
+    color: white;
+}
