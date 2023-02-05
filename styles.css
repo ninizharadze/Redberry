@@ -9,9 +9,15 @@
     box-sizing: border-box;
 }
 
+/* @font-face {
+    font-family: Helvetica Neue;
+    src: url(../რედბერი/fonts/HelveticaNeue.ttc);
+  } */
+
 body{
     width: 1920px;
     height: 1080px;
+    width: 100%;
 }
 .logo{
     padding: 20px;
@@ -21,6 +27,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    margin-bottom: 30px;
     border: 1px solid #1a1a1a;
 }
 
@@ -48,7 +55,9 @@ body{
     font-size: 20px;
     border-style: none;
     cursor: pointer;
-    font-family: 'Helvetica Neue';
+    font-family: testF;
+    text-transform: uppercase;
+    
 }
 
 .add a{
@@ -64,12 +73,15 @@ body{
 }
 
 .left-page{
-    width: 55%;
-    padding: 30px 60px;
+    width: 60%;
+    padding: 30px 90px;
     
 }
+.head h1{
+    text-transform: uppercase;
+}
 .right-page{
-    width: 45%;
+    width: 40%;
     background-color: white;
 }
 .head, .full-name{
@@ -83,36 +95,40 @@ body{
 }
 .whole-page label{
     font-size: 16px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-family: 'Helvetica Neue';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: helvetica;
     font-weight: 400;
     line-height: 21px;
 }
 .whole-page p{
     font-size: 14px;
-    color: #5e5c5c;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'Helvetica Neue';
+    color: #9a9797;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family:  helvetica;
 }
 
 div .next{
     display: flex;
     justify-content: flex-end;
+    margin-top: 180px;
 }
 .next input{
     background-color: #6B40E3;
     color: white;
-    padding: 18px 60px;
+    padding: 10px  50px;
     border-radius: 4px;
     border-style: none;
     cursor: pointer;
     font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
+
 input{
     height: 48px;
-   
+    border: 1px solid #BCBCBC;
 }
 .back{
     margin-left: 20px;
@@ -134,26 +150,27 @@ input{
     margin-top: 100%;
 }
 .names{
-    width: 300px;
+    width: 280px;
 }
 .about textarea{
     border-style: none;
     resize: none;
     height: 80px;
+    border: 1px solid #BCBCBC;
 }
 
 .file-upload{
     background-color: #0E80BF;
-    padding: 10px 10px 12px;
+    padding: 10px 40px;
     color: white;
     margin-left: 40px;
-    width: 107px;
-    height: 27px;
+    border-radius: 4px;
     border-style: none;
     font-size: 14px;
     cursor: pointer;
 }
 .upload{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
 }
