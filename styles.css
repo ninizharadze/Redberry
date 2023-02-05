@@ -84,14 +84,13 @@ body{
     width: 40%;
     background-color: white;
 }
-.head, .full-name{
+.head, .full-name, .date{
     display: flex;
     justify-content: space-between;
 }
-.firstname, .lastname, .about, .mail, .number{
+.firstname, .lastname, .about, .mail, .number, .tanamdeboba, .damsakmebeli, .start, .end {
     display: flex;
     flex-direction: column;
-    
 }
 .whole-page label{
     font-size: 16px;
@@ -109,12 +108,22 @@ body{
     font-family:  helvetica;
 }
 
-div .next{
+div .bottom-buttons{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin-top: 180px;
+    
+}
+/* div .next{
+    display: flex;
+    justify-content:flex-end;
     margin-top: 180px;
 }
-.next input{
+div .prev{
+    display: flex;
+    justify-content:flex-start;
+} */
+.next input, .prev input{
     background-color: #6B40E3;
     color: white;
     padding: 10px  50px;
@@ -173,4 +182,23 @@ input{
     margin-top: 30px;
     margin-bottom: 30px;
     
+}
+
+.end-line{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border: 1px solid #C1C1C1;
+}
+
+.add-experience{
+    background-color: #62A1EB;
+    padding: 18px 60px;
+    color: white;
+    font-size: 16px;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
 }
