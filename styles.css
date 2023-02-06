@@ -88,7 +88,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.firstname, .lastname, .about, .mail, .number, .tanamdeboba, .damsakmebeli, .start, .end {
+.firstname, .lastname, .about, .mail, .number, .tanamdeboba, .damsakmebeli, .start, .end, .saswavlebeli {
     display: flex;
     flex-direction: column;
 }
@@ -201,4 +201,22 @@ input{
     cursor: pointer;
     border-radius: 4px;
     margin-top: 10px;
+}
+
+
+
+.start-input, .end-input{
+    width: 280px;
+    
+}
+/* დავუბრუნდები */
+.calendar{
+   
+}
+.calendar-icon{
+    
+}
+
+#addition{
+    display: none;
 }
