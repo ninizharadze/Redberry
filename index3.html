@@ -31,8 +31,19 @@
                             <div class="start">
                                 <label>ხარისხი</label>
                                 <div class="calendar">
-                                    <input class="start-input" type="option" placeholder="&#x20 &#x20 ">
-                                    
+                                    <input list="browse" class="start-input" id="start-input"type="text" placeholder="&#x20 &#x20 აირჩიეთ ხარისხი">
+                                    <datalist id="browse">
+                                        <option value="საშუალო სკოლის დიპლომი"/>
+                                            <option value="ზოგადსაგანმანათლებლო დიპლომი"/>
+                                                <option value="ბაკალავრი"/>
+                                                    <option value="მაგისტრი"/>
+                                                    <option value="დოქტორი"/>
+                                                        <option value="ასოცირებული ხარისხი"/>
+                                                            <option value="სტუდენტი"/>
+                                                                <option value="კოლეჯი (ხარისხის გარეშე)"/>
+                                                                    <option value="სხვა"/>
+                                                                    
+                                    </datalist>
                                 </div>
                                 
                                
@@ -41,7 +52,7 @@
                             <div class="end">
                                 <label>დაწყების რიცხვი</label>
                                 <div class="calendar">
-                                    <input class="end-input" type="date" placeholder="&#x20 &#x20 mm/dd/yyyy">
+                                    <input class="end-input" type="text" placeholder="&#x20 &#x20 mm/dd/yyyy">
                                     <img src="../რედბერი/imgs/calendar.png" class="calendar-icon">
                                 </div>
                                 
@@ -70,8 +81,20 @@
                             <div class="start">
                                 <label>ხარისხი</label>
                                 <div class="calendar">
-                                    <input class="start-input" type="text" placeholder="&#x20 &#x20 mm/dd/yyyy">
                                     
+                                    <input list="browse" class="start-input" type="text" placeholder="&#x20 &#x20 აირჩიეთ ხარისხი">
+                                    <datalist id="browse">
+                                        <option value="საშუალო სკოლის დიპლომი"/>
+                                            <option value="ზოგადსაგანმანათლებლო დიპლომი"/>
+                                                <option value="ბაკალავრი"/>
+                                                    <option value="მაგისტრი"/>
+                                                    <option value="დოქტორი"/>
+                                                        <option value="ასოცირებული ხარისხი"/>
+                                                            <option value="სტუდენტი"/>
+                                                                <option value="კოლეჯი (ხარისხის გარეშე)"/>
+                                                                    <option value="სხვა"/>
+                                                                    
+                                    </datalist>
                                 </div>
                                 
                             </div>
@@ -99,7 +122,7 @@
                                 <a href="../რედბერი/index1.html"><input type="submit" value="უკან"></a>
                             </div>
                              <div class="next"> 
-                            <a href=""><input type="submit" value="შემდეგი"></a>
+                            <a href="../რედბერი/index4.html"><input type="submit" value="შემდეგი"></a>
                         </div>
                         
                         </div>
@@ -127,6 +150,7 @@
            
         </main>
         <footer></footer>
+        
         <script src="../რედბერი/display.js"></script>
         <script src="../რედბერი/upload.js"></script>
     </body>

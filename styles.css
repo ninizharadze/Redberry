@@ -114,15 +114,7 @@ div .bottom-buttons{
     margin-top: 180px;
     
 }
-/* div .next{
-    display: flex;
-    justify-content:flex-end;
-    margin-top: 180px;
-}
-div .prev{
-    display: flex;
-    justify-content:flex-start;
-} */
+
 .next input, .prev input{
     background-color: #6B40E3;
     color: white;
@@ -206,8 +198,19 @@ input{
 
 
 .start-input, .end-input{
+    
     width: 280px;
     
+}
+#start-input{
+    background-image: url(../რედბერი/imgs/down-.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.browse option{
+    /* background-color: #FFFF;
+    padding: 5px; */
 }
 /* დავუბრუნდები */
 .calendar{
@@ -219,4 +222,32 @@ input{
 
 #addition{
     display: none;
+}
+
+
+.resume{
+    width: 800px;
+    height: 900px;
+    border: 1px solid black; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: 40px;
+}
+
+#back{
+    
+}
+
+.success{
+    width: 300px;
+    height: 86px;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: -40px;
+    margin-right: -100px;
+}
+.container{
+    display: flex;
+    justify-content: center;
 }
