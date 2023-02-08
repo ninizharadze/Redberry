@@ -225,29 +225,65 @@ input{
 }
 
 
-.resume{
-    width: 800px;
-    height: 900px;
-    border: 1px solid black; 
-    /* display: flex;
+.container{
+    width: 100%;
+    display: flex;
     justify-content: center;
-    align-items: center; */
-    margin-top: 40px;
+}
+
+.center{
+    width: 50%;
+    height: 1080px;
+}
+.left{
+    width: 25%;
+    height: 1080px;
+}
+.right{
+    width: 25%;
+    height: 1080px;
 }
 
 #back{
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.resume{
+    width: 100%;
+    height: 800px;
+    border: 1px solid black;
+    margin-top: 50px;
+    position: relative;
+
+}
+.success{
+    position: relative;
+    width: 240px;
+    height: 90px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 28px rgba(0, 0, 0, 0.25);
     
 }
 
-.success{
-    width: 300px;
-    height: 86px;
-    border: 1px solid black;
-    text-align: center;
-    margin-top: -40px;
-    margin-right: -100px;
+.success p{
+    padding: 20px;
 }
-.container{
-    display: flex;
-    justify-content: center;
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#success{
+    display: block;
+}
+
+.resume-logo{
+    position: absolute;
+    padding:10px 70px;
+    margin-top: 100%;
+
 }

@@ -4,4 +4,6 @@ function show() {
   
 
 
-pickdate
+function closee(){
+    document.getElementById("success").style.display = "none";
+ }
