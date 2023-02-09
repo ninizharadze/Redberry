@@ -45,12 +45,12 @@
                         <div class="upload">
                             <label>პირადი ფოტოს ატვირთვა</label>
                             
-                            <input id="upload" onchange="loadFile(event)" type="file" id="file" accept="image/png, image/jpeg" hidden/>
-                            <button class="file-upload" onclick="thisFileUpload();">ატვირთვა</button>
+                            <input  type="file" id="image_input" accept="image/png, image/jpeg" hidden/>
+                            <button class="file-upload" onclick="thisFileUpload()">ატვირთვა</button>
                         </div>
                         <div class="about">
                             <label>ჩემ შესახებ (არასავალდებულო) </label>
-                            <textarea id="about" placeholder="&#x20 &#x20ზოგადი ინფო შენ შესახებ"></textarea>
+                            <textarea id="about" placeholder="&#x20 &#x20ზოგადი ინფო შენ შესახებ" oninput="updateAbout()"></textarea>
                         </div>
                         <div class="mail">
                             <label>ელ. ფოსტა</label>
@@ -84,19 +84,20 @@
 
                 <div class="right-page">
                     <div class="inputs-container">
+                        
                             <div class="left-info">
                                 <h1 id="targetFullName" 
-                                class="full_name_input">სრული სახელი:</h1>
-                                <p id="targetEmail">ელ.ფოსტა:</p>
-                                <p id="targetPhone">მობილური:</p>
+                                class="full_name_input">.</h1>
+                                <p id="targetEmail">.
+                                </p>
+                                <p id="targetPhone">.</p>
                                 <h3>ჩემ შესახებ</h3>
                                 <p id="targetAbout">-----</p>
                                 
                             </div>
 
-                            <div class="photo">
-                                <p>photo</p>
-                                <img src="" id="values">
+                            <div id="display_image">
+                                
                             </div>
                     </div>
                         <div class="small-logo">

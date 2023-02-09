@@ -24,14 +24,14 @@
 
                         <div class="saswavlebeli">
                             <label>სასწავლებელი</label>
-                            <input type="text" placeholder="&#x20 &#x20 სასწავლებელი">
+                            <input id="school" oninput="updateSchool()" type="text" placeholder="&#x20 &#x20 სასწავლებელი">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
                         <div class="date">
                             <div class="start">
                                 <label>ხარისხი</label>
                                 <div class="calendar">
-                                    <input list="browse" class="start-input" id="start-input"type="text" placeholder="&#x20 &#x20 აირჩიეთ ხარისხი">
+                                    <input id="degree" oninput="updateSchool()" list="browse" class="start-input" id="start-input"type="text" placeholder="&#x20 &#x20 აირჩიეთ ხარისხი">
                                     <datalist id="browse">
                                         <option value="საშუალო სკოლის დიპლომი"/>
                                             <option value="ზოგადსაგანმანათლებლო დიპლომი"/>
@@ -52,7 +52,7 @@
                             <div class="end">
                                 <label>დაწყების რიცხვი</label>
                                 <div class="calendar">
-                                    <input class="end-input" type="text" placeholder="&#x20 &#x20 mm/dd/yyyy">
+                                    <input id="school-date" oninput="updateStartDate()" class="end-input" type="text" placeholder="&#x20 &#x20 mm/dd/yyyy">
                                     <img src="../რედბერი/imgs/calendar.png" class="calendar-icon">
                                 </div>
                                 
@@ -63,7 +63,7 @@
                         
                         <div class="about">
                             <label>აღწერა</label>
-                            <textarea placeholder="&#x20 &#x20 განათლების აღწერა "></textarea>
+                            <textarea id="eduDescription" oninput="updateEduDescription()" placeholder="&#x20 &#x20 განათლების აღწერა "></textarea>
                         </div>
                         <hr class="end-line" style="width: 100%, " >
                        
@@ -72,7 +72,7 @@
                        <div id="addition">
                         <div class="saswavlebeli">
                             <label>სასწავლებელი</label>
-                            <input type="text" placeholder="&#x20 &#x20 სასწავლებელი">
+                            <input id="school" oninput="updateSchool()" type="text" placeholder="&#x20 &#x20 სასწავლებელი">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
     
@@ -82,7 +82,7 @@
                                 <label>ხარისხი</label>
                                 <div class="calendar">
                                     
-                                    <input list="browse" class="start-input" type="text" placeholder="&#x20 &#x20 აირჩიეთ ხარისხი">
+                                    <input id="degree" oninput="updateSchool()" list="browse" class="start-input" type="text" placeholder="&#x20 &#x20 აირჩიეთ ხარისხი">
                                     <datalist id="browse">
                                         <option value="საშუალო სკოლის დიპლომი"/>
                                             <option value="ზოგადსაგანმანათლებლო დიპლომი"/>
@@ -101,7 +101,7 @@
                             <div class="end">
                                 <label>დაწყების რიცხვი</label>
                                 <div class="calendar">
-                                    <input class="end-input" type="text" placeholder="&#x20 &#x20 mm/dd/yyyy">
+                                    <input id="school-date" oninput="updateStartDate()" class="end-input" type="text" placeholder="&#x20 &#x20 mm/dd/yyyy">
                                     <img src="../რედბერი/imgs/calendar.png" class="calendar-icon">
                                 </div>
                             </div>
@@ -110,7 +110,7 @@
                         
                         <div class="about">
                             <label>აღწერა</label>
-                            <textarea placeholder="&#x20 &#x20 განათლების აღწერა "></textarea>
+                            <textarea id="eduDescription" oninput="updateEduDescription()" placeholder="&#x20 &#x20 განათლების აღწერა "></textarea>
                         </div>
                         <hr class="end-line" style="width: 100%, " >
                     </div>
@@ -141,6 +141,13 @@
 
 
                 <div class="right-page">
+                    <div class="inputs">
+                        <h3>განათლება</h3>
+                        <p id="targetSchool">.</p>
+                        <p id="targetStartDate">.</p>
+                        <p id="targeteduDescription">.</p>
+                    </div>
+
                     <div class="small-logo">
                         <img src="../რედბერი/imgs/LOGO-12 1.png">
                     </div>
@@ -150,8 +157,8 @@
            
         </main>
         <footer></footer>
-        
         <script src="../რედბერი/display.js"></script>
+        <script src="../რედბერი/inputs.js"></script>
         <script src="../რედბერი/upload.js"></script>
     </body>
 </html>

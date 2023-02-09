@@ -22,7 +22,62 @@ function updatePhone(e){
     targetPhone.textContent = phone;
 }
 
-let loadFile = function(event){
-    let image = document.getElementById('upload');
-    image.src = URL.createObjectURL(event.target.files[0]);
-};
+function updateAbout(e){
+    let targetAbout = document.getElementById('targetAbout');
+    let about = document.getElementById('about').value;
+    targetAbout.textContent = about;
+}
+
+
+
+function updateJob(e){
+    /* ეს არის ელემენტი სადაც უნდა ჩავსვათ მნიშვნელობა */
+    let targetWork = document.getElementById('targetWork');
+    /* ეს არის სახელის ველის მნიშვნელობა */
+    let position = document.getElementById('position').value;
+    /* ეს არის გვარის მნიშვნელობა */
+    let job = document.getElementById('job').value;
+    /* ეს ჩასმაა მნიშვნელობის */
+    targetWork.textContent = position + ',' + job;
+}
+
+function updateDate(e){
+    /* ეს არის ელემენტი სადაც უნდა ჩავსვათ მნიშვნელობა */
+    let targetDate = document.getElementById('targetDate');
+    /* ეს არის სახელის ველის მნიშვნელობა */
+    let start = document.getElementById('start').value;
+    /* ეს არის გვარის მნიშვნელობა */
+    let end = document.getElementById('end').value;
+    /* ეს ჩასმაა მნიშვნელობის */
+    targetDate.textContent = start + '-' + end;
+}
+
+function updateDescription(e){
+    let targetDescription = document.getElementById('targetDescription');
+    let description = document.getElementById('description').value;
+    targetDescription.textContent = description;
+}
+
+function updateSchool(e){
+    /* ეს არის ელემენტი სადაც უნდა ჩავსვათ მნიშვნელობა */
+    let targetSchool = document.getElementById('targetSchool');
+    /* ეს არის სახელის ველის მნიშვნელობა */
+    let school = document.getElementById('school').value;
+    /* ეს არის გვარის მნიშვნელობა */
+    let degree = document.getElementById('degree').value;
+    /* ეს ჩასმაა მნიშვნელობის */
+    targetSchool.textContent = school + ',' + degree;
+}
+
+
+function updateStartDate(e){
+    let startdaTe = document.getElementById('targetStartDate');
+    let date = document.getElementById('school-date').value;
+    targetStartDate.textContent = date;
+}
+
+function updateEduDescription(e){
+    let Description = document.getElementById('targeteduDescription');
+    let description = document.getElementById('eduDescription').value;
+    targeteduDescription.textContent = description;
+}

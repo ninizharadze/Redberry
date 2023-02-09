@@ -302,3 +302,47 @@ input{
     text-transform: uppercase;
     font-size: 30px;
 }
+#targetEmail{
+
+}
+#targetDescription, #targeteduDescription, #targetAbout{
+    font-size: 16px;
+    color: black;
+}
+
+#targetEmail, #targetPhone{
+    font-size: 18px;
+    color: black;
+}
+#targetWork{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+#targetDate, #targetStartDate{
+    font-size: 16px;
+    color: #919191;
+    font-style: italic;
+}
+.inputs-container h3{
+    color: #F93B1D;
+}
+
+.inputs h3{
+    font-size: 18px;
+    color: #F93B1D;
+}
+
+
+#display_image{
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.inputs{
+    padding: 40px;
+}
