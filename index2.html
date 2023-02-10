@@ -45,7 +45,7 @@
                             </div>
 
                             <div class="end">
-                                <label>დაწყების რიცხვი</label>
+                                <label>დამთავრების რიცხვი</label>
                                 <div class="calendar">
                                     <input id="end" oninput="updateDate()" class="end-input" type="text" placeholder="&#x20 &#x20 mm/dd/yyyy">
                                     <img src="../რედბერი/imgs/calendar.png" class="calendar-icon">
@@ -80,15 +80,15 @@
                             <div class="start">
                                 <label>დაწყების რიცხვი</label>
                                 <div class="calendar">
-                                    <input class="start-input" type="text" placeholder="&#x20 &#x20 mm/dd/yyyy">
+                                    <input id="start" class="start-input" type="text" placeholder="&#x20 &#x20 mm/dd/yyyy">
                                     <img src="../რედბერი/imgs/calendar.png" class="calendar-icon">
                                 </div>
                                 
                             </div>
                             <div class="end">
-                                <label>დაწყების რიცხვი</label>
+                                <label>დამთავრების რიცხვი</label>
                                 <div class="calendar">
-                                    <input class="end-input" type="text" placeholder="&#x20 &#x20 mm/dd/yyyy">
+                                    <input id="end" class="end-input" type="text" placeholder="&#x20 &#x20 mm/dd/yyyy">
                                     <img src="../რედბერი/imgs/calendar.png" class="calendar-icon">
                                 </div>
                             </div>
@@ -97,7 +97,7 @@
                         
                         <div class="about">
                             <label>აღწერა</label>
-                            <textarea placeholder="&#x20 &#x20 როლი თანამდებობაზე და ზოგადი აღწერა "></textarea>
+                            <textarea id="description" placeholder="&#x20 &#x20 როლი თანამდებობაზე და ზოგადი აღწერა "></textarea>
                         </div>
                         <hr class="end-line" style="width: 100%, " >
                     </div>
@@ -109,7 +109,7 @@
                                 <a href="../რედბერი/index1.html"><input type="submit" value="უკან"></a>
                             </div>
                              <div class="next"> 
-                            <a href="../რედბერი/index3.html"><input type="submit" value="შემდეგი"></a>
+                            <a href="../რედბერი/index3.html"><input type="submit" value="შემდეგი" onclick="secondPage(event)"></a>
                         </div>
                         
                         </div>
@@ -147,5 +147,6 @@
         <script src="../რედბერი/inputs.js"></script>
         <script src="../რედბერი/display.js"></script>
         <script src="../რედბერი/upload.js"></script>
+        <script src="../რედბერი/storage.js"></script>
     </body>
 </html>
