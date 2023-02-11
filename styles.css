@@ -209,17 +209,7 @@ input{
     background-position: right;
 }
 
-.browse option{
-    /* background-color: #FFFF;
-    padding: 5px; */
-}
-/* დავუბრუნდები */
-.calendar{
-   
-}
-.calendar-icon{
-    
-}
+
 
 #addition{
     display: none;
@@ -345,4 +335,9 @@ input{
 
 .inputs{
     padding: 40px;
+}
+
+::placeholder{
+    font-size: 16px;
+    
 }
