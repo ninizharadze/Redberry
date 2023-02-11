@@ -9,7 +9,7 @@
         <header>
         </header>
         <main>
-            <form action="" onsubmit="thirdPage(event)">
+            <form action="" >
             <div class="whole-page">
                 <div class="back">
                     <a href="../რედბერი/index.html"><img class="ellipse" src="../რედბერი/imgs/Ellipse 1.png"></a>
@@ -25,14 +25,14 @@
 
                         <div class="saswavlebeli">
                             <label>სასწავლებელი</label>
-                            <input id="school" oninput="updateSchool()" type="text" placeholder="&#x20 &#x20 სასწავლებელი">
+                            <input id="school" oninput="updateSchool()" type="text" placeholder="სასწავლებელი">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
                         <div class="date">
                             <div class="start">
                                 <label>ხარისხი</label>
                                 <div class="calendar">
-                                    <input id="degree" oninput="updateSchool()" list="browse" class="start-input" id="start-input"type="text" placeholder="&#x20 &#x20 აირჩიეთ ხარისხი">
+                                    <input id="degree" oninput="updateSchool()" list="browse" class="start-input" id="start-input"type="text" placeholder="აირჩიეთ ხარისხი">
                                     <datalist id="browse">
                                         <option value="საშუალო სკოლის დიპლომი"></option>
                                             <option value="ზოგადსაგანმანათლებლო დიპლომი"></option>
@@ -53,8 +53,7 @@
                             <div class="end">
                                 <label>დაწყების რიცხვი</label>
                                 <div class="calendar">
-                                    <input id="school-date" oninput="updateStartDate()" class="end-input" type="date" placeholder="&#x20 &#x20 mm/dd/yyyy">
-                                    <img src="../რედბერი/imgs/calendar.png" class="calendar-icon">
+                                    <input id="school-date" oninput="updateStartDate()" class="end-input" type="date" placeholder="mm/dd/yyyy">
                                 </div>
                                 
                                 
@@ -64,7 +63,7 @@
                         
                         <div class="about">
                             <label>აღწერა</label>
-                            <textarea id="eduDescription" oninput="updateEduDescription()" placeholder="&#x20 &#x20 განათლების აღწერა "></textarea>
+                            <textarea id="eduDescription" oninput="updateEduDescription()" placeholder="განათლების აღწერა "></textarea>
                         </div>
                         <hr class="end-line" style="width: 100%, " >
                        
@@ -73,7 +72,7 @@
                        <div id="addition">
                         <div class="saswavlebeli">
                             <label>სასწავლებელი</label>
-                            <input id="school" oninput="updateSchool()" type="text" placeholder="&#x20 &#x20 სასწავლებელი">
+                            <input id="school" oninput="updateSchool()" type="text" placeholder="სასწავლებელი">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
     
@@ -83,7 +82,7 @@
                                 <label>ხარისხი</label>
                                 <div class="calendar">
                                     
-                                    <input id="degree" oninput="updateSchool()" list="browse" class="start-input" type="text" placeholder="&#x20 &#x20 აირჩიეთ ხარისხი">
+                                    <input id="degree" oninput="updateSchool()" list="browse" class="start-input" type="text" placeholder="აირჩიეთ ხარისხი">
                                     <datalist id="browse">
                                         <option value="საშუალო სკოლის დიპლომი"/>
                                             <option value="ზოგადსაგანმანათლებლო დიპლომი"/>
@@ -102,8 +101,7 @@
                             <div class="end">
                                 <label>დაწყების რიცხვი</label>
                                 <div class="calendar">
-                                    <input id="school-date" oninput="updateStartDate()" class="end-input" type="date" placeholder="&#x20 &#x20 mm/dd/yyyy">
-                                    <img src="../რედბერი/imgs/calendar.png" class="calendar-icon">
+                                    <input id="school-date" oninput="updateStartDate()" class="end-input" type="date" placeholder="mm/dd/yyyy">
                                 </div>
                             </div>
                             
@@ -111,7 +109,7 @@
                         
                         <div class="about">
                             <label>აღწერა</label>
-                            <textarea id="eduDescription" oninput="updateEduDescription()" placeholder="&#x20 &#x20 განათლების აღწერა "></textarea>
+                            <textarea id="eduDescription" oninput="updateEduDescription()" placeholder="განათლების აღწერა "></textarea>
                         </div>
                         <hr class="end-line" style="width: 100%, " >
                     </div>
@@ -123,7 +121,7 @@
                                 <a href="../რედბერი/index1.html"><input type="submit" value="უკან"></a>
                             </div>
                              <div class="next"> 
-                            <a href="../რედბერი/index4.html"><input type="submit" value="დასრულება"  onclick="validEdu()"></a>
+                            <input type="submit" value="დასრულება"  onclick="validEdu(), thirdPage(event)">
                         </div>
                         
                         </div>

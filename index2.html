@@ -9,7 +9,7 @@
         <header>
         </header>
         <main>
-            <form action="" onsubmit="secondPage(event)">
+            <form action="" >
             <div class="whole-page">
                 <div class="back">
                     <a href="../რედბერი/index.html"><img class="ellipse" src="../რედბერი/imgs/Ellipse 1.png"></a>
@@ -25,12 +25,12 @@
 
                         <div class="tanamdeboba">
                             <label>თანამდებობა</label>
-                            <input oninput="updateJob()" id="position" type="text" placeholder="&#x20 &#x20 დეველოპერი, დიზაინერი, ა.შ.">
+                            <input oninput="updateJob()" id="position" type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ.">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
                         <div class="damsakmebeli">
                             <label>დამსაქმებელი</label>
-                            <input oninput="updateJob()" id="job" type="text" placeholder="&#x20 &#x20 დამსაქმებელი">
+                            <input oninput="updateJob()" id="job" type="text" placeholder="დამსაქმებელი">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
 
@@ -38,16 +38,14 @@
                             <div class="start">
                                 <label>დაწყების რიცხვი</label>
                                 <div class="calendar">
-                                    <input id="start" oninput="updateDate()" class="start-input" type="date" placeholder="&#x20 &#x20 mm/dd/yyyy">
-                                    <img src="../რედბერი/imgs/calendar.png" class="calendar-icon">
+                                    <input id="start" oninput="updateDate()" class="start-input" type="date" placeholder=" mm/dd/yyyy">
                                 </div>
                             </div>
 
                             <div class="end">
                                 <label>დამთავრების რიცხვი</label>
                                 <div class="calendar">
-                                    <input id="end" oninput="updateDate()" class="end-input" type="date" placeholder="&#x20 &#x20 mm/dd/yyyy">
-                                    <img src="../რედბერი/imgs/calendar.png" class="calendar-icon">
+                                    <input id="end" oninput="updateDate()" class="end-input" type="date" placeholder="mm/dd/yyyy">
                                 </div>
                             </div>
                             
@@ -55,7 +53,7 @@
                         
                         <div class="about">
                             <label>აღწერა</label>
-                            <textarea id="description" oninput="updateDescription()" placeholder="&#x20 &#x20 როლი თანამდებობაზე და ზოგადი აღწერა "></textarea>
+                            <textarea id="description" oninput="updateDescription()" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა "></textarea>
                         </div>
                         <hr class="end-line" style="width: 100%, " >
                        
@@ -64,12 +62,12 @@
                        <div id="addition">
                         <div class="tanamdeboba">
                             <label>თანამდებობა</label>
-                            <input oninput="updateJob()" id="position" type="text" placeholder="&#x20 &#x20 დეველოპერი, დიზაინერი, ა.შ.">
+                            <input oninput="updateJob()" id="position" type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ.">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
                         <div class="damsakmebeli">
                             <label>დამსაქმებელი</label>
-                            <input oninput="updateJob()" id="job" type="text" placeholder="&#x20 &#x20 დამსაქმებელი">
+                            <input oninput="updateJob()" id="job" type="text" placeholder="დამსაქმებელი">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
 
@@ -77,15 +75,14 @@
                             <div class="start">
                                 <label>დაწყების რიცხვი</label>
                                 <div class="calendar">
-                                    <input id="start" class="start-input" type="date" placeholder="&#x20 &#x20 mm/dd/yyyy">
-                                    <img src="../რედბერი/imgs/calendar.png" class="calendar-icon">
+                                    <input id="start" class="start-input" type="date" placeholder="mm/dd/yyyy">
                                 </div>
                                 
                             </div>
                             <div class="end">
                                 <label>დამთავრების რიცხვი</label>
                                 <div class="calendar">
-                                    <input id="end" class="end-input" type="date" placeholder="&#x20 &#x20 mm/dd/yyyy">
+                                    <input id="end" class="end-input" type="date" placeholder="mm/dd/yyyy">
                                     <img src="../რედბერი/imgs/calendar.png" class="calendar-icon">
                                 </div>
                             </div>
@@ -94,7 +91,7 @@
                         
                         <div class="about">
                             <label>აღწერა</label>
-                            <textarea id="description" placeholder="&#x20 &#x20 როლი თანამდებობაზე და ზოგადი აღწერა "></textarea>
+                            <textarea id="description" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა "></textarea>
                         </div>
                         <hr class="end-line" style="width: 100%, " >
                     </div>
@@ -106,7 +103,7 @@
                                 <a href="../რედბერი/index1.html"><input type="submit" value="უკან"></a>
                             </div>
                              <div class="next"> 
-                            <a href="../რედბერი/index3.html"><input type="submit" value="შემდეგი" onclick="validExperience()" ></a>
+                            <input type="submit" value="შემდეგი" onclick="validExperience(), secondPage(event)" >
                         </div>
                         
                         </div>
