@@ -7,10 +7,12 @@ let valid = () =>{
     let emailPattern = /^[a-zA-Z0-9.]+@redberry.ge$/;
     let phoneNumber = document.getElementById('phone').value;
     let phonePattern = /^(\+?995)?(79\d{7}|5\d{8})$/;
+    let geoPatern = /^[ა-ჰ]+$/;
 
 
     if(email.match(emailPattern)){
         document.getElementById('email').style.border = '1px solid #98E37E';
+
          }else{
             document.getElementById('email').style.border = '1px solid #EF5050';
             
@@ -22,13 +24,13 @@ let valid = () =>{
         document.getElementById('phone').style.border = '1px solid #EF5050';
     }    
 
-    if (firstName.length >2 ){
+    if (firstName.length >2 && firstName.match(geoPatern)){
             document.getElementById('first_name').style.border = '1px solid #98E37E';
         }else{
             document.getElementById('first_name').style.border = '1px solid #EF5050';
         }
        
-    if (lastName.length >2 ){
+    if (lastName.length >2 && lastName.match(geoPatern)){
             document.getElementById('last_name').style.border = '1px solid #98E37E';
         }else{
             document.getElementById('last_name').style.border = '1px solid #EF5050';
