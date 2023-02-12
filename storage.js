@@ -18,25 +18,25 @@ function myFunction(event){
 }
 
 
-function getValue(){
-    var storedText = localStorage.getItem("firstName");
-    if(storedText != null){
-        document.getElementById("targetFullName").innerHTML = storedText; 
-        document.getElementById("first_name").value = storedText; 
-    }
-    else
-        document.getElementById("first_name").value = '';
-}
-function store(){
-    var text = document.getElementById("first_name").value;
-    localStorage.setItem("firstName", text);
-}
+// function getValue(){
+//     var storedText = localStorage.getItem("firstName");
+//     if(storedText != null){
+//         document.getElementById("targetFullName").innerHTML = storedText; 
+//         document.getElementById("first_name").value = storedText; 
+//     }
+//     else
+//         document.getElementById("first_name").value = '';
+// }
+// function store(){
+//     var text = document.getElementById("first_name").value;
+//     localStorage.setItem("firstName", text);
+// }
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("first_name").onkeyup = store;
-    document.getElementById("first_name").onload = getValue();
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//     document.getElementById("first_name").onkeyup = store;
+//     document.getElementById("first_name").onload = getValue();
+// });
 
 function secondPage(event){
     event.preventDefault();

@@ -3,7 +3,7 @@
     <head>
         <title>REDBERRY</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../რედბერი/styles.css">
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
         <header>
@@ -12,8 +12,8 @@
             
             <div class="whole-page">
                 <div class="back">
-                    <a href="../რედბერი/index.html"><img class="ellipse" src="../რედბერი/imgs/Ellipse 1.png"></a>
-                    <a href="../რედბერი/index.html"><img class="vector" src="../რედბერი/imgs/Vector.png"></a>
+                    <a href="./index.html"><img class="ellipse" src="./imgs/Ellipse 1.png"></a>
+                    <a href="./index.html"><img class="vector" src="./imgs/Vector.png"></a>
                 </div>
                 <div class="left-page">
                    
@@ -25,14 +25,16 @@
 
                         <div class="saswavlebeli">
                             <label>სასწავლებელი</label>
-                            <input id="school" oninput="updateSchool()" type="text" placeholder="სასწავლებელი" onclick="displayEdu(), displayLine()">
+                            <input id="school" oninput="updateSchool()" type="text" placeholder="სასწავლებელი" onclick="displayEdu(), displayLine()"
+                            onchange="validEdu()">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
                         <div class="date">
                             <div class="start">
                                 <label>ხარისხი</label>
                                 <div class="calendar">
-                                    <input id="degree" oninput="updateSchool()" list="browse" class="start-input" id="start-input"type="text" placeholder="აირჩიეთ ხარისხი">
+                                    <input id="degree" oninput="updateSchool()" list="browse" class="start-input" id="start-input"type="text" placeholder="აირჩიეთ ხარისხი"
+                                    onchange="validEdu()">
                                     <datalist id="browse">
                                         <option value="საშუალო სკოლის დიპლომი"></option>
                                             <option value="ზოგადსაგანმანათლებლო დიპლომი"></option>
@@ -53,7 +55,8 @@
                             <div class="end">
                                 <label>დაწყების რიცხვი</label>
                                 <div class="calendar">
-                                    <input id="school-date" oninput="updateStartDate()" class="end-input" type="date" placeholder="mm/dd/yyyy">
+                                    <input id="school-date" oninput="updateStartDate()" class="end-input" type="date" placeholder="mm/dd/yyyy"
+                                    onchange="validEdu()">
                                 </div>
                                 
                                 
@@ -63,7 +66,8 @@
                         
                         <div class="about">
                             <label>აღწერა</label>
-                            <textarea id="eduDescription" oninput="updateEduDescription()" placeholder="განათლების აღწერა "></textarea>
+                            <textarea id="eduDescription" oninput="updateEduDescription()" placeholder="განათლების აღწერა "
+                            onchange="validEdu()"></textarea>
                         </div>
                         <hr class="end-line" style="width: 100%, " >
                        
@@ -118,10 +122,10 @@
                        <button class="add-experience" onclick="show()">მეტი გამოცდილების დამატება</button>
                         <div class="bottom-buttons">
                             <div class="prev"> 
-                                <a href="../რედბერი/index2.html"><input type="submit" value="უკან"></a>
+                                <a href="./index2.html"><input type="submit" value="უკან"></a>
                             </div>
                              <div class="next"> 
-                            <input type="submit" value="დასრულება"  onclick="validEdu(), thirdPage(event)">
+                            <a href="./index4.html"><input type="submit" value="დასრულება"  ></a>
                         </div>
                         
                         </div>
@@ -148,7 +152,7 @@
                     </div>
                     <hr class="line2"  style="width: 90%;" id="line">
                     <div class="small-logo">
-                        <img src="../რედბერი/imgs/LOGO-12 1.png">
+                        <img src="./imgs/LOGO-12 1.png">
                     </div>
                     
                 </div>
@@ -156,10 +160,10 @@
            
         </main>
         <footer></footer>
-        <script src="../რედბერი/display.js"></script>
-        <script src="../რედბერი/inputs.js"></script>
-        <script src="../რედბერი/upload.js"></script>
-        <script src="../რედბერი/storage.js"></script>
-        <script src="../რედბერი/validations.js"></script>
+        <script src="./display.js"></script>
+        <script src="./inputs.js"></script>
+        <script src="./upload.js"></script>
+        <script src="./storage.js"></script>
+        <script src="./validations.js"></script>
     </body>
 </html>

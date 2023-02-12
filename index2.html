@@ -3,7 +3,7 @@
     <head>
         <title>REDBERRY</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../რედბერი/styles.css">
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
         <header>
@@ -12,8 +12,8 @@
             
             <div class="whole-page">
                 <div class="back">
-                    <a href="../რედბერი/index.html"><img class="ellipse" src="../რედბერი/imgs/Ellipse 1.png"></a>
-                    <a href="../რედბერი/index.html"><img class="vector" src="../რედბერი/imgs/Vector.png"></a>
+                    <a href="./index.html"><img class="ellipse" src="./imgs/Ellipse 1.png"></a>
+                    <a href="./index.html"><img class="vector" src="./imgs/Vector.png"></a>
                 </div>
                 
                 <div class="left-page">
@@ -25,12 +25,14 @@
 
                         <div class="tanamdeboba">
                             <label>თანამდებობა</label>
-                            <input oninput="updateJob()" id="position" type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ." onclick="displayExp(), displayLine()">
+                            <input oninput="updateJob()" id="position" type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ." onclick="displayExp(), displayLine()"
+                            onchange="validExperience()">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
                         <div class="damsakmebeli">
                             <label>დამსაქმებელი</label>
-                            <input oninput="updateJob()" id="job" type="text" placeholder="დამსაქმებელი">
+                            <input oninput="updateJob()" id="job" type="text" placeholder="დამსაქმებელი"
+                            onchange="validExperience()">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
 
@@ -38,14 +40,16 @@
                             <div class="start">
                                 <label>დაწყების რიცხვი</label>
                                 <div class="calendar">
-                                    <input id="start" oninput="updateDate()" class="start-input" type="date" placeholder=" mm/dd/yyyy">
+                                    <input id="start" oninput="updateDate()" class="start-input" type="date" placeholder=" mm/dd/yyyy"
+                                    onchange="validExperience()">
                                 </div>
                             </div>
 
                             <div class="end">
                                 <label>დამთავრების რიცხვი</label>
                                 <div class="calendar">
-                                    <input id="end" oninput="updateDate()" class="end-input" type="date" placeholder="mm/dd/yyyy">
+                                    <input id="end" oninput="updateDate()" class="end-input" type="date" placeholder="mm/dd/yyyy"
+                                    onchange="validExperience()">
                                 </div>
                             </div>
                             
@@ -53,7 +57,8 @@
                         
                         <div class="about">
                             <label>აღწერა</label>
-                            <textarea id="description" oninput="updateDescription()" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა "></textarea>
+                            <textarea id="description" oninput="updateDescription()" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა "
+                            onchange="validExperience()"></textarea>
                         </div>
                         <hr class="end-line" style="width: 100%, " >
                        
@@ -100,10 +105,10 @@
 
                         <div class="bottom-buttons">
                             <div class="prev"> 
-                                <a href="../რედბერი/index1.html"><input type="submit" value="უკან"></a>
+                                <a href="./index1.html"><input type="submit" value="უკან"></a>
                             </div>
                              <div class="next"> 
-                            <input type="submit" value="შემდეგი" onclick="validExperience(), secondPage(event)" >
+                            <a href="./index3.html"><input type="submit" value="შემდეგი" ></a>
                         </div>
                         
                         </div>
@@ -131,7 +136,7 @@
                     </div>
                     <hr class='line2'  style="width: 90%;" id="line">
                     <div class="small-logo">
-                        <img src="../რედბერი/imgs/LOGO-12 1.png">
+                        <img src="./imgs/LOGO-12 1.png">
                     </div>
                     
                 </div>
@@ -139,11 +144,11 @@
             
         </main>
         <footer></footer>
-        <script src="../რედბერი/inputs.js"></script>
-        <script src="../რედბერი/display.js"></script>
-        <script src="../რედბერი/upload.js"></script>
-        <script src="../რედბერი/storage.js"></script>
-        <script src="../რედბერი/validations.js"></script>
+        <script src="./inputs.js"></script>
+        <script src="./display.js"></script>
+        <script src="./upload.js"></script>
+        <script src="./storage.js"></script>
+        <script src="./validations.js"></script>
     </body>
     
 </html>

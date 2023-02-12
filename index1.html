@@ -3,7 +3,7 @@
     <head>
         <title>REDBERRY</title>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="../რედბერი/styles.css">
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
         <header>
@@ -12,8 +12,8 @@
             
             <div class="whole-page">
                 <div class="back">
-                    <a href="../რედბერი/index.html"><img class="ellipse" src="../რედბერი/imgs/Ellipse 1.png"></a>
-                    <a href="../რედბერი/index.html"><img class="vector" src="../რედბერი/imgs/Vector.png"></a>
+                    <a href="./index.html"><img class="ellipse" src="./imgs/Ellipse 1.png"></a>
+                    <a href="./index.html"><img class="vector" src="./imgs/Vector.png"></a>
                 </div>
                 <div class="left-page">
                    
@@ -30,7 +30,9 @@
                                     class="names" 
                                     type="text" 
                                     placeholder="ანზორ"
-                                    onclick="displayLine()">
+                                    onclick="displayLine()"
+                                    onchange="valid()"
+                                    >
                                 <p>მინიმუმ 2 ასო, ქართული ასოები</p>
                             </div>
                             <div class="lastname">
@@ -40,7 +42,8 @@
                                 id="last_name" 
                                 class="names" 
                                 type="text" 
-                                placeholder="მუმლაძე" >
+                                placeholder="მუმლაძე" 
+                                onchange="valid()">
                                 <p>მინიმუმ 2 ასო, ქართული ასოებით</p>
                             </div>
                         </div>
@@ -51,7 +54,8 @@
                         </div>
                         <div class="about">
                             <label>ჩემ შესახებ (არასავალდებულო) </label>
-                            <textarea id="about" placeholder="ზოგადი ინფო შენ შესახებ" oninput="updateAbout()" onclick="displayAbout()"></textarea>
+                            <textarea id="about" placeholder="ზოგადი ინფო შენ შესახებ" oninput="updateAbout()" onclick="displayAbout()"
+                            onchange="valid()"></textarea>
                         </div>
                         <div class="mail">
                             <label>ელ. ფოსტა</label>
@@ -60,7 +64,8 @@
                             id="email"
                             class="email" 
                             type="text" 
-                            placeholder="anzorr666@redberry.ge">
+                            placeholder="anzorr666@redberry.ge"
+                            onchange="valid()">
                             <p>უნდა მთავრდებოდეს @redberry.ge-ით</p>
                         </div>
                         <div class="number">
@@ -69,7 +74,8 @@
                             id="phone"
                             oninput="updatePhone()"
                             type="text" 
-                            placeholder="+995 551 12 34 56">
+                            placeholder="+995 551 12 34 56"
+                            onchange="valid()">
                             <p>უნდა აკმაყოფილებდეს ქართული მობილურის ნომრის ფორმას</p>
                         </div>
                         <div class="bottom-buttons">
@@ -77,7 +83,7 @@
                             <a href=""><input type="submit" value="უკან" hidden></a>
                         </div>
                         <div class="next"> 
-                            <input type="submit" value="შემდეგი" onclick="valid(), myFunction(event) " >
+                            <a href="./index2.html"><input type="submit" value="შემდეგი" ></a>
                             
                         </div>
                     </div>
@@ -105,7 +111,7 @@
                     <hr class='line2'  style="width: 90%;" id="line">
                     
                         <div class="small-logo">
-                            <img src="../რედბერი/imgs/LOGO-12 1.png">
+                            <img src="./imgs/LOGO-12 1.png">
                             </div>
                                            
                     
@@ -115,11 +121,12 @@
         </main>
         <footer></footer>
         <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
-
-        <script src="../რედბერი/validations.js"></script>
-        <script src="../რედბერი/storage.js"></script>
-        <script src="../რედბერი/inputs.js"></script>
-        <script src="../რედბერი/upload.js"></script>
-        <script src="../რედბერი/display.js"></script>
+        <script src="./storage1.js"></script>
+        <script src="./storage2.js"></script>
+        <script src="./validations.js"></script>
+        <script src="./storage.js"></script>
+        <script src="./inputs.js"></script>
+        <script src="./upload.js"></script>
+        <script src="./display.js"></script>
     </body>
 </html>
