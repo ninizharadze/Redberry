@@ -9,14 +9,14 @@
         <header>
         </header>
         <main>
-            <form action="" >
+            
             <div class="whole-page">
                 <div class="back">
                     <a href="../რედბერი/index.html"><img class="ellipse" src="../რედბერი/imgs/Ellipse 1.png"></a>
                     <a href="../რედბერი/index.html"><img class="vector" src="../რედბერი/imgs/Vector.png"></a>
                 </div>
+                
                 <div class="left-page">
-                   
                      <div class="head">
                         <h1>გამოცდილება</h1>
                         <p>2/3</p>
@@ -25,7 +25,7 @@
 
                         <div class="tanamdeboba">
                             <label>თანამდებობა</label>
-                            <input oninput="updateJob()" id="position" type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ.">
+                            <input oninput="updateJob()" id="position" type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ." onclick="displayExp(), displayLine()">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
                         <div class="damsakmebeli">
@@ -62,7 +62,7 @@
                        <div id="addition">
                         <div class="tanamdeboba">
                             <label>თანამდებობა</label>
-                            <input oninput="updateJob()" id="position" type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ.">
+                            <input oninput="updateJob()" id="position" type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ." >
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
                         <div class="damsakmebeli">
@@ -95,9 +95,9 @@
                         </div>
                         <hr class="end-line" style="width: 100%" >
                     </div>
+                    <button class="add-experience" onclick="show()" id="add-experience-button">მეტი გამოცდილების დამატება</button>
+                    <!-- <div id="experience-container"></div> -->
 
-
-                       <button class="add-experience" onclick="show()">მეტი გამოცდილების დამატება</button>
                         <div class="bottom-buttons">
                             <div class="prev"> 
                                 <a href="../რედბერი/index1.html"><input type="submit" value="უკან"></a>
@@ -123,20 +123,20 @@
 
                 <div class="right-page">
                     <div class="inputs">
-                        <h3>გამოცდილება</h3>
-                        <p id="targetWork">.</p>
-                        <p id="targetDate">.</p>
-                        <p id="targetDescription">.</p>
+                        <h3 id="exp">გამოცდილება</h3>
+                        <p id="targetWork"></p>
+                        <p id="targetDate"></p>
+                        <p id="targetDescription"></p>
 
                     </div>
-                    <hr class='line2'  style="width: 90%;">
+                    <hr class='line2'  style="width: 90%;" id="line">
                     <div class="small-logo">
                         <img src="../რედბერი/imgs/LOGO-12 1.png">
                     </div>
                     
                 </div>
             </div>
-            </form>
+            
         </main>
         <footer></footer>
         <script src="../რედბერი/inputs.js"></script>
@@ -145,4 +145,5 @@
         <script src="../რედბერი/storage.js"></script>
         <script src="../რედბერი/validations.js"></script>
     </body>
+    
 </html>

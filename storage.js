@@ -15,17 +15,28 @@ function myFunction(event){
     localStorage.setItem('about', about);
     localStorage.setItem('email', email);
     localStorage.setItem('phoneNumber', phoneNumber);
-
-    localStorage.getItem('firstName', firstName );
-    localStorage.getItem('lastName', lastName);
-    localStorage.getItem('photo', photo);
-    localStorage.getItem('about', about);
-    localStorage.getItem('email', email);
-    localStorage.getItem('phoneNumber', phoneNumber);
-    
 }
 
 
+function getValue(){
+    var storedText = localStorage.getItem("firstName");
+    if(storedText != null){
+        document.getElementById("targetFullName").innerHTML = storedText; 
+        document.getElementById("first_name").value = storedText; 
+    }
+    else
+        document.getElementById("first_name").value = '';
+}
+function store(){
+    var text = document.getElementById("first_name").value;
+    localStorage.setItem("firstName", text);
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("first_name").onkeyup = store;
+    document.getElementById("first_name").onload = getValue();
+});
 
 function secondPage(event){
     event.preventDefault();
@@ -69,3 +80,5 @@ function thirdPage(event){
     localStorage.getItem('eduDescription', eduDescription);
 
 }
+
+

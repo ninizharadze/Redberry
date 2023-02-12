@@ -9,7 +9,7 @@
         <header>
         </header>
         <main>
-            <form action="" >
+            
             <div class="whole-page">
                 <div class="back">
                     <a href="../რედბერი/index.html"><img class="ellipse" src="../რედბერი/imgs/Ellipse 1.png"></a>
@@ -25,7 +25,7 @@
 
                         <div class="saswavlebeli">
                             <label>სასწავლებელი</label>
-                            <input id="school" oninput="updateSchool()" type="text" placeholder="სასწავლებელი">
+                            <input id="school" oninput="updateSchool()" type="text" placeholder="სასწავლებელი" onclick="displayEdu(), displayLine()">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
                         <div class="date">
@@ -141,19 +141,19 @@
 
                 <div class="right-page">
                     <div class="inputs">
-                        <h3>განათლება</h3>
-                        <p id="targetSchool">.</p>
-                        <p id="targetStartDate">.</p>
-                        <p id="targeteduDescription">.</p>
+                        <h3 id="edu">განათლება</h3>
+                        <p id="targetSchool"></p>
+                        <p id="targetStartDate"></p>
+                        <p id="targeteduDescription"></p>
                     </div>
-                    <hr class="line2"  style="width: 90%;">
+                    <hr class="line2"  style="width: 90%;" id="line">
                     <div class="small-logo">
                         <img src="../რედბერი/imgs/LOGO-12 1.png">
                     </div>
                     
                 </div>
             </div>
-            </form>
+           
         </main>
         <footer></footer>
         <script src="../რედბერი/display.js"></script>

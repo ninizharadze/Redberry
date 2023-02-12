@@ -14,7 +14,7 @@
     src: url(../რედბერი/fonts/HelveticaNeue.ttc);
   } */
 
-body{
+html{
     width: 1920px;
     height: 1080px;
     width: 100%;
@@ -322,16 +322,6 @@ input{
     color: #F93B1D;
 }
 
-
-#display_image{
-    width: 200px;
-    height: 200px;
-    margin-left: 100px;
-    margin-top: 40px;
-    border: 1px solid black;
-    border-radius: 50%;
-}
-
 .inputs{
     padding: 40px;
 }
@@ -346,4 +336,17 @@ input{
     margin-right: auto;
     margin-top: 20px;
     border: 0.1px solid #C8C8C8;
+}
+
+#about-me, #line, #exp, #edu{
+    display: none;
+}
+
+#canv1{
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+    border-radius: 50%;
 }
