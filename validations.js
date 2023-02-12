@@ -14,7 +14,6 @@ let valid = () =>{
         location.href = 'file:///Users/user/Desktop/რედბერი/index2.html';
          }else{
             document.getElementById('email').style.border = '1px solid #EF5050';
-            
         }
 
     if(phoneNumber.match(phonePattern)){
@@ -65,14 +64,14 @@ let validExperience = () =>{
         document.getElementById('start').style.border = '1px solid #EF5050';
         }else{
             document.getElementById('start').style.border = '1px solid #98E37E';
-            ocation.href = 'file:///Users/user/Desktop/რედბერი/index3.html';
+            location.href = 'file:///Users/user/Desktop/რედბერი/index3.html';
     }
 
     if(endDate == ""){
         document.getElementById('end').style.border = '1px solid #EF5050';
     }else{
         document.getElementById('end').style.border = '1px solid #98E37E';
-        ocation.href = 'file:///Users/user/Desktop/რედბერი/index3.html';
+        location.href = 'file:///Users/user/Desktop/რედბერი/index3.html';
     }
 }
 

@@ -15,6 +15,13 @@ function myFunction(event){
     localStorage.setItem('about', about);
     localStorage.setItem('email', email);
     localStorage.setItem('phoneNumber', phoneNumber);
+
+    localStorage.getItem('firstName', firstName );
+    localStorage.getItem('lastName', lastName);
+    localStorage.getItem('photo', photo);
+    localStorage.getItem('about', about);
+    localStorage.getItem('email', email);
+    localStorage.getItem('phoneNumber', phoneNumber);
     
 }
 
@@ -35,6 +42,12 @@ function secondPage(event){
     localStorage.setItem('endDate', endDate);
     localStorage.setItem('description', description);
 
+    localStorage.getItem('position', position);
+    localStorage.getItem('job', job);
+    localStorage.getItem('startDate', startDate);
+    localStorage.getItem('endDate', endDate);
+    localStorage.getItem('description', description);
+
 }
 
 function thirdPage(event){
@@ -49,5 +62,10 @@ function thirdPage(event){
     localStorage.setItem('degree', degree);
     localStorage.setItem('schoolDate', schoolDate);
     localStorage.setItem('eduDescription', eduDescription);
+
+    localStorage.getItem('school', school);
+    localStorage.getItem('degree', degree);
+    localStorage.getItem('schoolDate', schoolDate);
+    localStorage.getItem('eduDescription', eduDescription);
 
 }
