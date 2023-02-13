@@ -25,13 +25,17 @@
 
                         <div class="tanamdeboba">
                             <label>თანამდებობა</label>
-                            <input oninput="updateJob()" id="position" type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ." onclick="displayExp(), displayLine()"
+                            <input name="position"
+                            oninput="updateJob(), setLocale(this)" 
+                            id="position" type="text" placeholder="დეველოპერი, დიზაინერი, ა.შ." onclick="displayExp(), displayLine()"
                             onchange="validExperience()">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
                         <div class="damsakmebeli">
                             <label>დამსაქმებელი</label>
-                            <input oninput="updateJob()" id="job" type="text" placeholder="დამსაქმებელი"
+                            <input name="job"
+                            oninput="updateJob(), setLocale(this)" 
+                            id="job" type="text" placeholder="დამსაქმებელი"
                             onchange="validExperience()">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
@@ -40,7 +44,10 @@
                             <div class="start">
                                 <label>დაწყების რიცხვი</label>
                                 <div class="calendar">
-                                    <input id="start" oninput="updateDate()" class="start-input" type="date" placeholder=" mm/dd/yyyy"
+                                    <input name="start"
+                                    id="start" 
+                                    oninput="updateDate(), setLocale(this)"
+                                     class="start-input" type="date" placeholder=" mm/dd/yyyy"
                                     onchange="validExperience()">
                                 </div>
                             </div>
@@ -48,7 +55,10 @@
                             <div class="end">
                                 <label>დამთავრების რიცხვი</label>
                                 <div class="calendar">
-                                    <input id="end" oninput="updateDate()" class="end-input" type="date" placeholder="mm/dd/yyyy"
+                                    <input name="end"
+                                     id="end" 
+                                     oninput="updateDate(), setLocale(this)" 
+                                     class="end-input" type="date" placeholder="mm/dd/yyyy"
                                     onchange="validExperience()">
                                 </div>
                             </div>
@@ -57,7 +67,9 @@
                         
                         <div class="about">
                             <label>აღწერა</label>
-                            <textarea id="description" oninput="updateDescription()" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა "
+                            <textarea name="description" 
+                            id="description" 
+                            oninput="updateDescription(), setLocale(this)" placeholder="როლი თანამდებობაზე და ზოგადი აღწერა "
                             onchange="validExperience()"></textarea>
                         </div>
                         <hr class="end-line" style="width: 100%, " >

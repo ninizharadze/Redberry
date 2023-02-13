@@ -25,7 +25,9 @@
 
                         <div class="saswavlebeli">
                             <label>სასწავლებელი</label>
-                            <input id="school" oninput="updateSchool()" type="text" placeholder="სასწავლებელი" onclick="displayEdu(), displayLine()"
+                            <input name="school" id="school" 
+                            oninput="updateSchool(), setLocale(this)" 
+                            type="text" placeholder="სასწავლებელი" onclick="displayEdu(), displayLine()"
                             onchange="validEdu()">
                             <p>მინიმუმ 2 სიმბოლო</p>
                         </div>
@@ -33,7 +35,9 @@
                             <div class="start">
                                 <label>ხარისხი</label>
                                 <div class="calendar">
-                                    <input id="degree" oninput="updateSchool()" list="browse" class="start-input" id="start-input"type="text" placeholder="აირჩიეთ ხარისხი"
+                                    <input name="degree" id="degree" 
+                                    oninput="updateSchool(), setLocale(this)" 
+                                    list="browse" class="start-input" id="start-input"type="text" placeholder="აირჩიეთ ხარისხი"
                                     onchange="validEdu()">
                                     <datalist id="browse">
                                         <option value="საშუალო სკოლის დიპლომი"></option>
@@ -55,7 +59,9 @@
                             <div class="end">
                                 <label>დაწყების რიცხვი</label>
                                 <div class="calendar">
-                                    <input id="school-date" oninput="updateStartDate()" class="end-input" type="date" placeholder="mm/dd/yyyy"
+                                    <input name="school-date" id="school-date" 
+                                    oninput="updateStartDate(), setLocale(this)" 
+                                    class="end-input" type="date" placeholder="mm/dd/yyyy"
                                     onchange="validEdu()">
                                 </div>
                                 
@@ -66,7 +72,9 @@
                         
                         <div class="about">
                             <label>აღწერა</label>
-                            <textarea id="eduDescription" oninput="updateEduDescription()" placeholder="განათლების აღწერა "
+                            <textarea name="eduDescription" id="eduDescription" 
+                            oninput="updateEduDescription(), setLocale(this)" 
+                            placeholder="განათლების აღწერა "
                             onchange="validEdu()"></textarea>
                         </div>
                         <hr class="end-line" style="width: 100%, " >

@@ -25,8 +25,9 @@
                         <div class="full-name">
                             <div class="firstname">
                                 <label>სახელი</label>
-                                <input id="first_name"
-                                    oninput="updateFullName()"
+                                <input
+                                name="first_name" id="first_name"
+                                    oninput="updateFullName(), setLocale(this)"
                                     class="names" 
                                     type="text" 
                                     placeholder="ანზორ"
@@ -38,7 +39,8 @@
                             <div class="lastname">
                                 <label>გვარი</label>
                                 <input 
-                                oninput="updateFullName()"
+                                name="last_name"
+                                oninput="updateFullName(), setLocale(this)"
                                 id="last_name" 
                                 class="names" 
                                 type="text" 
@@ -49,18 +51,19 @@
                         </div>
                         <div class="upload">
                             <label>პირადი ფოტოს ატვირთვა</label>
-                            <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()" hidden />
+                            <input name="photo" oninput="setLocale(this)" type="file" multiple="false" accept="image/*" id="finput" onchange="upload()" hidden />
                             <button id="finput" class="file-upload" onclick="thisFileUpload()"    >ატვირთვა</button>
                         </div>
                         <div class="about">
                             <label>ჩემ შესახებ (არასავალდებულო) </label>
-                            <textarea id="about" placeholder="ზოგადი ინფო შენ შესახებ" oninput="updateAbout()" onclick="displayAbout()"
+                            <textarea name="about" id="about" placeholder="ზოგადი ინფო შენ შესახებ" oninput="updateAbout(), setLocale()" onclick="displayAbout()"
                             onchange="valid()"></textarea>
                         </div>
                         <div class="mail">
                             <label>ელ. ფოსტა</label>
                             <input 
-                            oninput="updateEmail()"
+                            name="email"
+                            oninput="updateEmail(), setLocale(this)"
                             id="email"
                             class="email" 
                             type="text" 
@@ -71,8 +74,9 @@
                         <div class="number">
                             <label>მობილური ნომერი</label>
                             <input 
+                            name="phone"
                             id="phone"
-                            oninput="updatePhone()"
+                            oninput="updatePhone(), setLocale(this)"
                             type="text" 
                             placeholder="+995 551 12 34 56"
                             onchange="valid()">
@@ -93,13 +97,13 @@
                     <div class="inputs-container">
                         
                             <div class="left-info">
-                                <h1 id="targetFullName" class="full_name_input">
+                                <h1 id="targetFullName" class="">
                                     
                                 </h1>
-                                <p id="targetEmail"></p>
-                                <p id="targetPhone"></p>
+                                <p id="targetEmail" ></p>
+                                <p id="targetPhone" ></p>
                                 <h3 id="about-me">ჩემ შესახებ</h3>
-                                <p id="targetAbout"></p>
+                                <p id="targetAbout""></p>
                                 
                             </div>
                             <div>
@@ -121,8 +125,6 @@
         </main>
         <footer></footer>
         <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
-        <script src="./storage1.js"></script>
-        <script src="./storage2.js"></script>
         <script src="./validations.js"></script>
         <script src="./storage.js"></script>
         <script src="./inputs.js"></script>
